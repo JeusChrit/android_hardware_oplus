@@ -12,8 +12,9 @@ allow hal_fingerprint_default tee_device:chr_file rw_file_perms;
 allow hal_fingerprint_default vendor_proc_tee_bind_core:file w_file_perms;
 allow hal_fingerprint_default vendor_persist_engineer_file:dir add_name;
 allow hal_fingerprint_default vendor_persist_engineer_file:dir write;
-allow platform_app last_boot_reason_prop:file read;
-allow platform_app last_boot_reason_prop:file open;
+allow hal_fingerprint_default vendor_persist_engineer_file:dir read;
+allow hal_fingerprint_default vendor_persist_engineer_file:dir open;
+
 
 allow hal_fingerprint_default vendor_qdsp_device:chr_file rw_file_perms;
 allow hal_fingerprint_default vendor_xdsp_device:chr_file rw_file_perms;
