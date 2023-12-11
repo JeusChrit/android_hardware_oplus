@@ -12,4 +12,6 @@ allow vendor_hal_perf_default hal_power_default:file open;
 allow vendor_hal_perf_default surfaceflinger:file open;
 allow vendor_hal_perf_default hal_power_default:file write;
 allow vendor_hal_perf_default surfaceflinger:file write;
+allow vendor_hal_perf_default hal_power_default:file getattr;
+allow vendor_hal_perf_default surfaceflinger:file getattr;
 
