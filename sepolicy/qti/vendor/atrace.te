@@ -1,0 +1,3 @@
+allow atrace debugfs_tracing_debug:file write;
+allow atrace debugfs_tracing_debug:file read;
+allow atrace debugfs_tracing_debug:file open;
