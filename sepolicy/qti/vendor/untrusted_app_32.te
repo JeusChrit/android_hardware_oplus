@@ -1,0 +1,2 @@
+allow untrusted_app_32 mnt_sdcard_file:lnk_file read;
+allow untrusted_app_32 system_lib_file:file execmod;
