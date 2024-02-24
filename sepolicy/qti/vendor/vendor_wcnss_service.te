@@ -1,12 +1,4 @@
 create_dir_file(vendor_wcnss_service, mnt_vendor_file)
-allow vendor_wcnss_service vendor_wifi_vendor_log_data_file:dir { getattr read search };
-allow vendor_wcnss_service vendor_wifi_vendor_log_data_file:dir { open setattr write };
-allow vendor_wcnss_service vendor_wifi_vendor_log_data_file:file { append read };
-allow vendor_wcnss_service vendor_wifi_vendor_log_data_file:dir add_name;
-allow vendor_wcnss_service vendor_wifi_vendor_log_data_file:file open;
-allow vendor_wcnss_service vendor_wifi_vendor_log_data_file:file write;
-allow vendor_wcnss_service vendor_wifi_vendor_log_data_file:file { create getattr setattr };
-
 
 set_prop(vendor_wcnss_service, vendor_vold_prop)
 

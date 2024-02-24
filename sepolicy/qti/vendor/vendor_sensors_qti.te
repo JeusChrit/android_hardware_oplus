@@ -1,4 +1,0 @@
-allow vendor_qti_init_shell vendor_proc_swappiness:file open;
-allow vendor_sensors_qti vendor_diag_device:chr_file { read write };
-allow vendor_sensors_qti vendor_diag_device:chr_file open;
-allow vendor_sensors_qti vendor_diag_device:chr_file ioctl;
