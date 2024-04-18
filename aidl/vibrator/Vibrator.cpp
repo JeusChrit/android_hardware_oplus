@@ -42,7 +42,7 @@
 
 #include "include/Vibrator.h"
 #ifdef USE_EFFECT_STREAM
-#include "effect.h"
+#include "effect/effect.h"
 #endif
 
 namespace aidl {
@@ -67,6 +67,7 @@ namespace vibrator {
 #define APQ_CPU_CAPE            531
 #define MSM_CPU_TARO            457
 #define MSM_CPU_TARO_LTE        552
+#define MSM_CPU_KALAMA          519
 
 #define test_bit(bit, array)    ((array)[(bit)/8] & (1<<((bit)%8)))
 
@@ -156,6 +157,7 @@ InputFFDevice::InputFFDevice()
             case MSM_CPU_YUPIK:
             case MSM_CPU_CAPE:
             case APQ_CPU_CAPE:
+            case MSM_CPU_KALAMA:
                 mSupportExternalControl = true;
                 break;
             default:

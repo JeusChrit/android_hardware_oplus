@@ -4,6 +4,8 @@ type vendor_hal_cameraMDM_hwservice, hwservice_manager_type, protected_hwservice
 
 # IFAA
 type hal_ifaa_hwservice, hwservice_manager_type;
+# Dolby
+type vendor_hal_dms_hwservice, hwservice_manager_type, protected_hwservice;
 
 # ORMS
 type vendor_hal_orms_hwservice, hwservice_manager_type, protected_hwservice;
